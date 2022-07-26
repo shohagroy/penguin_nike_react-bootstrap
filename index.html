@@ -52,6 +52,17 @@
         <!-- hero section start -->
         <section class="container py-5">
             <div class="row ">
+
+                <!-- tosat massege section -->
+    <div class="toast align-items-right text-dark bg-warning border-5 border-danger border-bottom-0 border-top-0 border-end-0 position-absolute top-50 end-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body">
+              Offer! Offer! Offer! Shose - 50% Off.
+          </div>
+          <button type="button" class="btn-close btn-close-dark me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    <!-- tosat massege section -->
                 
                 <div class="d-lg-flex justify-content-between align-items-center flex-lg-row-reverse ">
     
@@ -78,6 +89,7 @@
     </header>
 
     <!-- header section end -->
+
 
     <!-- main section start -->
     <main class=" ">
@@ -112,7 +124,15 @@
                 <!-- SHOES-2 -->
                 <div class="col-12 col-lg-4 col-md-6">
                     <div class=" p-4 bg-white rounded-3 shadow-lg">
-                        <div class="card">
+                        <div class="card position-relative">
+
+                            
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <h5>-25%</h5>
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+
+                              
                             <div class="p-3 caragory">
                                 <img src="images/shose-2.PNG" class="card-img-top" alt="...">
                             </div>
@@ -157,6 +177,18 @@
         <!-- CASUAL SHOES SECTION END -->
 
 
+        <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                Hello, world! This is a toast message.
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+
+
+
+
         <!-- FORMAL SHOES SECTION START -->
         <div class="container my-5">
             <h2 class="h1 fw-bold my-4">FORMAL SHOES</h2>
@@ -166,6 +198,13 @@
                 <div class="col-12 col-lg-4 col-md-6">
                     <div class=" p-4 bg-white rounded-3 shadow-lg">
                         <div class="card">
+
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <h5>-20%</h5>
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+
+
                             <div class="p-3 caragory">
                                 <img src="images/Mask Group.png" class="card-img-top" alt="...">
                             </div>
@@ -231,6 +270,8 @@
 
         <!-- FORMAL SHOES SECTION ENDT -->
 
+        
+
 
         <!-- buy and offer section start -->
         <div class="container my-5">
@@ -292,8 +333,22 @@
     <!-- footer section end -->
 
 
+    
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <!-- toast script -->
+    <script>
+        window.onload = (event) => {
+            let myAlert = document.querySelector('.toast');
+            let bsAlert = new bootstrap.Toast(myAlert);
+            bsAlert.show();
+        }
+    </script>
+    
 
 </body>
 </html>
